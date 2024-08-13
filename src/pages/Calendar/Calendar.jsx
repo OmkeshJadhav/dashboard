@@ -32,7 +32,7 @@ const Calendar = () => {
   };
 
   const handleEventClick = (clickInfo) => {
-    if (confirm("Are you sure you want to delete this event?")) {
+    if (alert("Are you sure you want to delete this event?")) {
       clickInfo.event.remove();
     }
   };
